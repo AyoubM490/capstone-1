@@ -58,6 +58,12 @@ button {
   align-items: center;
 }
 
+.flex-center-col-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -101,6 +107,17 @@ button {
 
 .navbar .nav-list .nav-link a {
   color: var(--textColor);
+}
+
+.navbar .nav-list .nav-link a.active {
+  color: var(--secondaryColor);
+}
+
+.navbar .nav-list .nav-link a.tech {
+  padding: 1rem 2rem;
+  border: 3px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  font-weight: 700;
 }
 
 .main-navbar.backg {
@@ -432,11 +449,6 @@ button {
   z-index: 100;
 }
 
-.team-members {
-  flex-direction: column;
-  padding-bottom: 5rem;
-}
-
 .member-profile {
   position: relative;
   margin-right: 3rem;
@@ -474,10 +486,14 @@ button {
 .team-members .member:first-child,
 .team-members .member:nth-child(2) {
   display: flex;
+  width: 43%;
+  margin-right: 8px;
 }
 
 .team-members .member.show {
   display: flex;
+  width: 43%;
+  margin-right: 8px;
 }
 
 .team-members .member:last-child {
@@ -623,4 +639,209 @@ button {
 
 #footer .created p {
   color: var(--textColor);
+}
+
+@media screen and (min-width: 768px) {
+  .top-navbar {
+    display: block;
+  }
+
+  .main-navbar {
+    box-shadow: 0 8px 16px rgb(39, 42, 49, 0.3);
+    background-color: #fff;
+    padding: 1rem 0;
+  }
+
+  .main-navbar .navbar .menu {
+    display: none;
+  }
+
+  .main-navbar .navbar-brand {
+    display: block;
+  }
+
+  .main-navbar .navbar-brand a {
+    color: var(--secondaryColor);
+  }
+
+  .navbar .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar .navbar {
+    justify-content: flex-end;
+  }
+
+  .headline {
+    margin-top: 8rem;
+  }
+
+  .headline .main-tilte {
+    width: 65%;
+  }
+
+  .main-content {
+    align-items: flex-start;
+  }
+
+  .headline .detail {
+    width: 60%;
+    max-width: 500px;
+    margin: 0;
+  }
+
+  .work-time {
+    width: 60%;
+    max-width: 500px;
+    margin: 2rem 0;
+  }
+
+  .mission-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .mission-list .mission-card {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+  }
+
+  .mission-card .content-mission {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .mission-card .mission-detail {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mission-card .content-mission .mission-title h2 {
+    margin: 1rem 0;
+  }
+
+  .mission-btn {
+    display: none;
+  }
+
+  .see-more-container {
+    width: 15%;
+    margin: 0 auto;
+    justify-items: flex-end;
+    text-align: center;
+  }
+
+  .see-more-container .see-more-link {
+    color: #fff;
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 4rem 0;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    flex-wrap: wrap;
+  }
+
+  .team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .team-members .member {
+    flex-direction: row;
+  }
+
+  .team .see-more {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .partner-list li {
+    margin: 0 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer-main-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer .created {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-navbar {
+    display: block;
+  }
+
+  .main-navbar {
+    box-shadow: 0 8px 16px rgb(39, 42, 49, 0.3);
+    background-color: #fff;
+    padding: 1rem 0;
+  }
+
+  .main-navbar .navbar .menu {
+    display: none;
+  }
+
+  .main-navbar .navbar-brand {
+    display: block;
+  }
+
+  .navbar .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar .navbar {
+    justify-content: flex-end;
+  }
+
+  .headline {
+    margin-top: 8rem;
+  }
+
+  .headline .main-tilte {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .headline .detail {
+    max-width: 600px;
+  }
+
+  .about-tech-detail {
+    max-width: 500px;
+  }
+
+  .tech-navbar-brand {
+    max-width: 400px;
+  }
+
+  .footer-main-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer .created {
+    justify-content: flex-start;
+  }
+
+  .navbar .nav-list .nav-link:nth-child(5) {
+    display: none;
+  }
+
+  .flex-center-col-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

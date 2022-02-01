@@ -198,8 +198,8 @@ button {
   justify-content: space-between;
 }
 
-.navbar .nav-list .nav-link a.about {
-  color: red;
+.navbar .nav-list .nav-link a.active {
+  color: var(--secondaryColor);
 }
 
 .navbar .nav-list .nav-link a.tech {
@@ -422,6 +422,10 @@ button {
 
   .main-navbar .logo {
     display: block;
+  }
+
+  .main-navbar .logo a {
+    color: var(--secondaryColor);
   }
 
   .navbar .nav-list {
