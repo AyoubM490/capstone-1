@@ -6,7 +6,7 @@ The Latest Routing Technology is a company whose mission is to change all the ol
 - [live demo](https://ayoubms.github.io/capstone-1/index.html)
 
 ## video
-[Short overview](https://www.loom.com/share/a1bf20ff98f4448cb6b460eec7f1f315)
+[Short overview](https://www.loom.com/share/8bcada69e18b4195b7debd2e2d354ff1)
 
 ## Built With
 - HTML
