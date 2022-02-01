@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+@font-face {
+  font-family: Cocogoose;
+  src: url(../fonts/Cocogoose.otf);
+  font-weight: bold;
+}
+
+:root {
+  --textColor: #272a31;
+  --primaryColor: #d3d3d3;
+  --secondaryColor: #ec5242;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.top-navbar {
+  width: 100%;
+  height: 30px;
+  background-color: var(--textColor);
+  display: none;
+}
+
+.top-navbar-list {
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.top-navbar-list li {
+  padding-left: 2rem;
+}
+
+.top-navbar-list li a {
+  color: var(--primaryColor);
+}
+
+.main-navbar {
+  width: 100%;
+  height: 7rem;
+  justify-content: space-between;
+}
+
+.main-navbar.backg {
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgb(39, 42, 49, 0.3);
+}
+
+.main-navbar .navbar .menu {
+  font-size: 3rem;
+  color: var(--textColor);
+  padding-top: 3rem;
+}
+
+.main-navbar.backg .navbar .menu {
+  padding: 0;
+}
+
+.navbar-content .navbar .close {
+  display: none;
+}
+
+.navbar .nav-list {
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+
+.navbar .nav-list .nav-link {
+  margin-left: 4rem;
+}
+
+.tech-logo .logo a {
+  font-size: 3rem;
+  color: #ec5242;
+}
+
+.navbar .nav-list .nav-link a {
+  color: var(--textColor);
+}
+
+.main-navbar.open {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #2f3032 0%, #f30 100%);
+  opacity: 0.9;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-navbar.open .navbar .close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.main-navbar.open .navbar .close .fa {
+  font-size: 24px;
+  color: #fff;
+}
+
+.main-navbar.open .navbar .menu {
+  display: none;
+}
+
+.main-navbar.open .navbar .nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10rem;
+}
+
+.main-navbar.open .navbar .nav-list .nav-link {
+  margin-bottom: 2rem;
+}
+
+.main-navbar.open .navbar .nav-list .nav-link:last-child {
+  display: none;
+}
+
+.main-navbar.open .navbar .nav-list .nav-link a {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.navbar-content {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.navbar-content .logo {
+  height: 4rem;
+  width: 15rem;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-content .navbar {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.navbar .nav-list .nav-link a.about {
+  color: red;
+}
+
+.navbar .nav-list .nav-link a.tech {
+  padding: 1rem 2rem;
+  border: 3px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  font-weight: 700;
+}
+
+#main {
+  width: 100%;
+}
+
+.headline {
+  width: 100%;
+}
+
+.headline .our-terms {
+  width: 100%;
+  height: auto;
+  background-image: url("./img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.our-term-main-container {
+  text-align: center;
+}
+
+.headline .slogan {
+  padding-top: 13rem;
+  font-size: 2.3rem;
+  color: var(--secondaryColor);
+}
+
+.headline .main-tilte {
+  width: 100%;
+}
+
+.headline h1 {
+  color: var(--secondaryColor);
+  font-weight: 900;
+  font-size: 3.5rem;
+  font-family: "Cocogoose", sans-serif;
+  text-transform: uppercase;
+}
+
+.headline .detail-container {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 999;
+  background-image: url("./img/bg.jpg");
+}
+
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primaryColor);
+  opacity: 0.33;
+  z-index: -1;
+}
+
+.headline .detail {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  color: #fff;
+  background-color: transparent;
+}
+
+.headline .detail p {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.work-time {
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--textColor);
+}
+
+.work-time span:first-child {
+  font-size: 1.7rem;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.work-time span:last-child {
+  margin-top: 1rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-decoration-style: solid;
+}
+
+.about-tech {
+  width: 100%;
+  margin: 3rem 0;
+  border-bottom: 2px solid var(--primaryColor);
+  padding-bottom: 3rem;
+}
+
+.about-title {
+  width: 70%;
+  text-align: center;
+  position: relative;
+  margin: 3rem auto;
+  color: var(--textColor);
+}
+
+.about-title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 30px;
+  background-color: var(--secondaryColor);
+  bottom: -1.4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.about-tech-detail {
+  width: 70%;
+  text-align: center;
+  margin: 3rem auto;
+  color: var(--textColor);
+  font-weight: 600;
+}
+
+.tech-logo {
+  height: 180px;
+  border: 2px solid var(--primaryColor);
+  justify-content: center;
+}
+
+.tech-logo .logo {
+  max-width: 100%;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondaryColor);
+  opacity: 0.8;
+  mix-blend-mode: multiply;
+}
+
+.content-title {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+#footer {
+  width: 100%;
+  background-color: var(--textColor);
+}
+
+.footer-main-container {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+
+#footer .logo {
+  height: 6.5rem;
+  width: 15rem;
+  margin-right: 2.5rem;
+}
+
+#footer .logo a {
+  color: #ec5242;
+}
+
+#footer .created {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer .created p {
+  color: var(--primaryColor);
+}
+
+@media screen and (min-width: 768px) {
+  .top-navbar {
+    display: block;
+  }
+
+  .main-navbar {
+    box-shadow: 0 8px 16px rgb(39, 42, 49, 0.3);
+    background-color: #fff;
+    padding: 1rem 0;
+  }
+
+  .main-navbar .navbar .menu {
+    display: none;
+  }
+
+  .main-navbar .logo {
+    display: block;
+  }
+
+  .navbar .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar .navbar {
+    justify-content: flex-end;
+  }
+
+  .headline {
+    margin-top: 8rem;
+  }
+
+  .headline .main-tilte {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .headline .detail {
+    max-width: 600px;
+  }
+
+  .about-tech-detail {
+    max-width: 500px;
+  }
+
+  .tech-logo {
+    max-width: 400px;
+  }
+
+  .footer-main-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer .created {
+    justify-content: flex-start;
+  }
+
+  .navbar .nav-list .nav-link:nth-child(5) {
+    display: none;
+  }
+}
